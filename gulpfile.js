@@ -11,20 +11,20 @@ gulp.task('server', function() {
 
     browserSync({
         server: {
-            baseDir: "dist"
+            baseDir: "./src"
         }
     });
 
-    gulp.watch("src/*.html").on('change', browserSync.reload);
+    gulp.watch("./*.html").on('change', browserSync.reload);
 });
 
 gulp.task('styles', function() {
-    return gulp.src("src/sass/**/*.+(scss|sass)")
+    return gulp.src("./src/sass/**/*.+(scss|sass)")
         .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
         .pipe(rename({suffix: '.min', prefix: ''}))
         .pipe(autoprefixer())
         .pipe(cleanCSS({compatibility: 'ie8'}))
-        .pipe(gulp.dest("dist/css"))
+        .pipe(gulp.dest("./src/css"))
         .pipe(browserSync.stream());
 });
 
