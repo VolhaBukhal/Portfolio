@@ -1,0 +1,17 @@
+.btn{
+    padding: 12px 26px;
+    background: $main-color;
+    text-align: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    transition: 0.5s all ease;
+    &:hover{
+        // background-color:#c2820b;
+        transform:scale(1.1);
+    }
+    &_transp{
+        background: transparent;
+        box-shadow: none;
+        padding-right: 0;
+    }
+    
+}
