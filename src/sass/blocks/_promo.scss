@@ -4,12 +4,12 @@
     min-height: 100vh;
     position: relative;
     background: url("../img/main_bg.jpg") no-repeat 50%/cover;
+    
     &__subtitle{
         position: relative;
         padding-left: 10px;
         z-index: 2;
         @include circle;
-        
     }
     &__title{
         margin-top: 9px;
@@ -30,13 +30,41 @@
         font-weight: 700;
       
     }
+
+    .burger{
+        // display: block;
+        width: 36px;
+        height: 24px;
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        cursor: pointer;
+        span{
+            position: absolute;
+            display: block;
+            width: 100%;
+            height: 3px;
+            background: #151812;
+            z-index: 6;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        &:before, &:after{
+            content: '';
+            width: 83%;
+            height: 3px;
+            position: absolute;
+            background: #151812;
+            right: 0;
+        }
+        &:before{
+            top:0;
+        }
+        &:after{
+            bottom:0;
+        }
+
+    }
     
     
 }
-
-// .promo__btns {
-// }
-// .promo__link {
-// }
-// .btn {
-// }

@@ -31,6 +31,20 @@
             transform: rotate(-90deg) translate(-41%, -247%); 
         }
     }
+    .social-link{
+        svg{
+            width: 20px;
+            height: 20px;
+            path{
+                transition: 0.4s all ease;
+            }
+            &:hover{
+                path{
+                    fill: $main-color;
+                }
+            }
+        }
+    }
     
 }
 

@@ -11,5 +11,17 @@
         left: 0;
         z-index: -1;
     }
-    
+}
+
+@mixin line{
+    &:after{
+        content: '';
+        display: block;
+        position: absolute;
+        top: 107%;
+        left: 0;
+        width: 60px;
+        height:3px;
+        background-color: $main-color;
+    }
 }
