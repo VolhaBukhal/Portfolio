@@ -4,13 +4,13 @@
         position: relative;
         text-align: center;
         @include circle;
-        @include shift-center;
+        @include shift-center-horiz;
     }
     &__title{
         text-align: center;
         position: relative;
         @include line;
-        @include shift-center;
+        @include shift-center-horiz;
     }
     &__row{
         padding: 0 65px;
@@ -32,13 +32,69 @@
                 border-radius: 100%;
                 background-color: $main-color;
                 position: absolute;
+                top: 7px;
+                left: -7px;
             }
-            // @include shift-center-vertical;
         }
-
     }
+    &-item{
+        position: relative;
+        &:before{
+            content: '';
+            width: 35px;
+            height: 1px;
+            background-color: #000000;
+            position: absolute;
+            top: 65px;
+            left: 0;
+        }
+        &__head{
+            padding-left: 100px;
+            padding-top: 45px;
+            position: relative;
+           
+        }
+        &__descr{
+            margin-top: 12px;
+            padding-left: 35px;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
+        }
+        &__icon{
+            position: absolute;
+            // padding: 5px 0 0 16px;
+            top: 48px;
+            left: 35px;
+            @include circle;
+            img{
+                position:absolute;
+                top: 14px;
+                left: 17px;
+            }
+        }
+        &__location{
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
+        }
+    }
+}
 
-
+.item-list{
+    list-style: none;
+    li{
+        position: relative;
+        &:after{
+            content: '';
+            width: 1px;
+            height: 100%;
+            position: absolute;
+            top: -8px;
+            left: 0;
+            background-color: #000000;
+        }
+    }
 }
 
 // .resume-column__title {

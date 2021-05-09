@@ -30,13 +30,13 @@
 @mixin shift-center-horiz{
     &:before, &:after{
         left: 50%;
-        transform: translate(-50%);
+        transform: translateX(-50%);
     }
 }
 
 // @mixin shift-center-vertical{
 //     &:before, &:after{
 //         top: 50%;
-//         transform: translate(-50%);
+//         transform: translateY(-50%);
 //     }
 // }
