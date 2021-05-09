@@ -1,0 +1,57 @@
+.resume {
+    padding-top: 120px;
+    &__subtitle{
+        position: relative;
+        text-align: center;
+        @include circle;
+        @include shift-center;
+    }
+    &__title{
+        text-align: center;
+        position: relative;
+        @include line;
+        @include shift-center;
+    }
+    &__row{
+        padding: 0 65px;
+        margin-top: 85px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 135px;
+
+    }
+    &-column{
+        &__title{
+            padding-left: 35px;
+            position: relative;
+            &:before{
+                content: '';
+                display: inline;
+                width: 15px;
+                height: 15px;
+                border-radius: 100%;
+                background-color: $main-color;
+                position: absolute;
+            }
+            // @include shift-center-vertical;
+        }
+
+    }
+
+
+}
+
+// .resume-column__title {
+// }
+// .resume-item {
+// }
+// .resume-item__head {
+// }
+// .resume-item__icon {
+// }
+// .title_fz14 {
+// }
+// .resume-item__location {
+// }
+// .resume-item__descr {
+// }
