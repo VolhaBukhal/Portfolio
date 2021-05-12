@@ -1,18 +1,5 @@
 .experience {
     padding-top: 135px;
-    &__subtitle{
-        position: relative;
-        text-align: center;
-        @include circle;
-        @include  shift-center-horiz;
-    }    
-    &__title{
-        text-align: center;
-        position: relative;
-        @include line;
-        @include shift-center-horiz;
-    }
-
     &__top{
         margin-top: 85px;
         padding: 0 10px;

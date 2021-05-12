@@ -1,17 +1,5 @@
 .resume {
     padding-top: 120px;
-    &__subtitle{
-        position: relative;
-        text-align: center;
-        @include circle;
-        @include shift-center-horiz;
-    }
-    &__title{
-        text-align: center;
-        position: relative;
-        @include line;
-        @include shift-center-horiz;
-    }
     &__row{
         padding: 0 65px;
         margin-top: 85px;

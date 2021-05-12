@@ -1,8 +1,8 @@
 .title{
-    font-weight: 700;
-    font-style: normal;
     line-height: 60px;
     font-size: 36px;
+    font-weight: 700;
+    
     &_fz14{
         font-size: 14px;
         line-height: 21px;
@@ -20,5 +20,19 @@
     }
     &_fz48{
         font-size: 48px;
+    }
+    &__section-title{
+        font-style: normal;
+        text-align: center;
+        position: relative;
+        @include line;
+        @include shift-center-horiz;
+
+    }
+    &__section-subtitle{
+        text-align: center;
+        position: relative;
+        @include circle;
+        @include shift-center-horiz;
     }
 }
