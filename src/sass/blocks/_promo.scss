@@ -23,14 +23,12 @@
         align-items: center;
     }
     &__link{
-        text-decoration: none;
-        font-size: 14px;
-        line-height: 21px;
-        color: #000000;
-        font-weight: 700;
-      
+        transition: 0.5s all ease;
+        &:hover{
+            // background-color:#c2820b;
+            transform:scale(1.1);
+        }
     }
-
     .burger{
         // display: block;
         width: 36px;

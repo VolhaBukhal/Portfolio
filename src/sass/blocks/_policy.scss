@@ -1,0 +1,33 @@
+.policy{
+    padding: 50px 0;
+    h1{
+        text-align: center;
+    }
+
+    ol{
+        list-style: none;
+        counter-reset: li;
+    }
+    li{
+        position: relative;
+        margin-top: 5px;
+        &:before{
+            position: absolute;
+            counter-increment: li;
+            content: counters(li, ".") "." ;
+            top: 0;
+            left: -2%;
+            
+        }
+    }
+    &__inner, &__three{
+        padding-left: 50px;
+        li {
+            &:before{
+                left: -4%;
+            }
+        }
+        
+    }
+  
+}

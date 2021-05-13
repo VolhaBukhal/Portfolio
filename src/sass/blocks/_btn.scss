@@ -3,11 +3,12 @@
     background: $main-color;
     text-align: center;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    transition: 0.5s all ease;
-    &:hover{
-        // background-color:#c2820b;
-        transform:scale(1.1);
-    }
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 21px;
+    color: #000000;
+    font-weight: 700;
+   
     &_transp{
         background: transparent;
         box-shadow: none;
