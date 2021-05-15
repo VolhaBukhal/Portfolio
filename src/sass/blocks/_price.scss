@@ -40,12 +40,13 @@
             }
         }
     }
+    .title__section-subtitle {
+        @include line;
+        @include shift-center-horiz;
+        &:after{
+            margin-top: 31px;
+        }
+    }
 
 }
-.title__section-subtitle {
-    @include line;
-    @include shift-center-horiz;
-    &:after{
-        margin-top: 31px;
-    }
-}
+

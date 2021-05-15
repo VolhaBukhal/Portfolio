@@ -4,11 +4,12 @@
         padding: 0 35px 0 52px;
         display: grid;
         grid-template-columns: 400px 585px;
+        grid-template-rows: 600px;;
         justify-content: space-between;
     }
     &__img{
         position: relative;
-        height: 600px;
+        // height: 600px;
         img{
             position: absolute;
             top: 0;
